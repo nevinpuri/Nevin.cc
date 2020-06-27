@@ -36,7 +36,6 @@ export class ReposList extends Component {
             ],
           });
         });
-        console.log(this.state.githubTitles);
       })
       .catch((err) => console.log(err));
   };

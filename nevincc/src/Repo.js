@@ -35,7 +35,9 @@ export class Repo extends Component {
                 <Button variant="secondary" href={this.props.url}>
                   Github
                 </Button>
-                <a className="github-stars">🌟 {this.props.stars}</a>
+                <a className="github-stars">
+                  <span role="img">🌟</span> {this.props.stars}
+                </a>
               </div>
             </Card.Body>
           </Card>

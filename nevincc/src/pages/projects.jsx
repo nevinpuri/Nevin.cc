@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import NavigationBar from "../NavigationBar";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import ReposList from "../ReposList";
 import "../style.css";
 
@@ -12,7 +10,9 @@ export class Projects extends Component {
         <div>
           <NavigationBar />
         </div>
-        <ReposList />
+        <div>
+          <ReposList />
+        </div>
       </div>
     );
   }
