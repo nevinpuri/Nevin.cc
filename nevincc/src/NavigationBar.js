@@ -1,12 +1,20 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import navbarLogo from "./navbar-logo.png";
 
 function NavigationBar() {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">Nevin.cc</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+            src={navbarLogo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />
+        </Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/projects">Projects</Nav.Link>
