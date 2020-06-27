@@ -9,7 +9,7 @@ import {
 import IndexPage from "./pages/index.jsx";
 import Projects from "./pages/projects.jsx";
 import About from "./pages/about.jsx";
-import Contact from "./pages/contact.jsx";
+import ErrorPage from "./pages/error.jsx";
 
 class App extends Component {
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
           <Route exact path="/" component={IndexPage} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/error" component={ErrorPage} />
           <Redirect to="/error" />
         </Switch>
       </Router>
