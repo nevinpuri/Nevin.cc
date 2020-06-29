@@ -41,18 +41,28 @@ export class ReposList extends Component {
   };
   render() {
     return (
-      <div className="repo-card">
-        {this.state.githubTitles.map((repo) => (
-          <Repo
-            key={uuidv4()}
-            repoName={repo.title}
-            repoDesc={repo.description}
-            lang={repo.language}
-            url={repo.url}
-            stars={repo.stars}
-            branch={repo.branch}
-          />
-        ))}
+      <div>
+        <div className="repo-card">
+          {this.state.githubTitles.map((repo) => (
+            <Repo
+              key={uuidv4()}
+              repoName={repo.title}
+              repoDesc={repo.description}
+              lang={repo.language}
+              url={repo.url}
+              stars={repo.stars}
+              branch={repo.branch}
+            />
+          ))}
+        </div>
+        <div className="text-center">
+          <a className="text-muted">
+            Page won't load? Here is my{" "}
+            <a className="text-muted" href="https://github.com/Nevin1901">
+              Github
+            </a>
+          </a>
+        </div>
       </div>
     );
   }

@@ -6,7 +6,9 @@ class Index extends Component {
     return (
       <div>
         <NavigationBar />
-        <h1 className="m-2">Welcome to my website</h1>
+        <div className="m-2">
+          <h1>Welcome to my website</h1>
+        </div>
       </div>
     );
   }
