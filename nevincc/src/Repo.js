@@ -32,7 +32,11 @@ export class Repo extends Component {
                 {this.props.repoDesc}
               </Card.Text>
               <div className="github-button">
-                <Button variant="secondary" href={this.props.url}>
+                <Button
+                  variant="secondary"
+                  href={this.props.url}
+                  target={"_blank"}
+                >
                   Github
                 </Button>
                 <p className="github-stars">
