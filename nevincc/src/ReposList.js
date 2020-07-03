@@ -47,7 +47,7 @@ export class ReposList extends Component {
             <Repo
               key={uuidv4()}
               repoName={repo.title}
-              repoDesc={repo.description}
+              repoDesc={repo.description ? repo.description : "No Description"}
               lang={repo.language}
               url={repo.url}
               stars={repo.stars}
@@ -56,11 +56,8 @@ export class ReposList extends Component {
           ))}
         </div>
         <div className="text-center">
-          <a className="text-muted">
-            Page won't load? Here is my{" "}
-            <a className="text-muted" href="https://github.com/Nevin1901">
-              Github
-            </a>
+          <a className="text-muted" href="https://github.com/Nevin1901">
+            Page won't load? Here is my GitHub
           </a>
         </div>
       </div>

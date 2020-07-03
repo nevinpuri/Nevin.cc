@@ -29,15 +29,18 @@ export class Repo extends Component {
             <Card.Body>
               <Card.Title>{this.props.repoName}</Card.Title>
               <Card.Text className="text-secondary">
-                {this.props.repoDesc ? this.props.repoDesc : "No Description"}
+                {this.props.repoDesc}
               </Card.Text>
               <div className="github-button">
                 <Button variant="secondary" href={this.props.url}>
                   Github
                 </Button>
-                <a className="github-stars">
-                  <span role="img">🌟</span> {this.props.stars}
-                </a>
+                <p className="github-stars">
+                  <span role="img" aria-label="star-emoji">
+                    🌟
+                  </span>{" "}
+                  {this.props.stars}
+                </p>
               </div>
             </Card.Body>
           </Card>

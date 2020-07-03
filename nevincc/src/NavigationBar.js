@@ -12,6 +12,7 @@ function NavigationBar() {
             src={navbarLogo}
             width="30"
             height="30"
+            alt="Logo"
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
