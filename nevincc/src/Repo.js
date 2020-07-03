@@ -1,18 +1,12 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import "./style.css";
 
 export class Repo extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
-
-  checkImage = () => {
-    // TODO: make this function check if file exists in directory
-    return false;
-  };
 
   render() {
     return (
