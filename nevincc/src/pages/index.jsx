@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavigationBar from "../NavigationBar";
+import NavigationBar from "../Navbar/NavigationBar";
 
 class Index extends Component {
   render() {

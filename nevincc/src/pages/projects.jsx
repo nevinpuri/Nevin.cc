@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NavigationBar from "../NavigationBar";
-import ReposList from "../ReposList";
+import NavigationBar from "../Navbar/NavigationBar";
+import ReposList from "../Repos/ReposList";
 import "../style.css";
 
 export class Projects extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavigationBar from "../NavigationBar";
+import NavigationBar from "../Navbar/NavigationBar";
 
 export class About extends Component {
   render() {

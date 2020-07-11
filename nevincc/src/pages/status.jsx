@@ -1,17 +1,16 @@
 import React, { Component } from "react";
+import VPSStatus from "../VPSStatus/VPSStatus";
 import NavigationBar from "../Navbar/NavigationBar";
 
-export class ErrorPage extends Component {
+class Status extends Component {
   render() {
     return (
       <div>
         <NavigationBar />
-        <h1 className="text-center" style={{ marginTop: "20%" }}>
-          Page Not Found
-        </h1>
+        <VPSStatus />
       </div>
     );
   }
 }
 
-export default ErrorPage;
+export default Status;
