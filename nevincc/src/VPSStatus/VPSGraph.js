@@ -16,25 +16,32 @@ const VPSGraph = ({ componentName, componentData, graphColor }) => {
   return (
     <div>
       <h1 className="graph-text">{componentName}</h1>
-      <AreaChart width={800} height={300} data={componentData}>
-        <defs>
-          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor={graphColor} stopOpacity={0.8} />
-            <stop offset="95%" stopColor={graphColor} stopOpacity={0} />
-          </linearGradient>
-        </defs>
-        <XAxis type="number" domain={[0, 24]} dataKey="hour" />
-        <YAxis type="number" domain={[0, 100]} dataKey="Usage" />
-        <CartesianGrid strokeDasharray="5 5" />
-        <Tooltip />
-        <Area
-          type="monotone"
-          dataKey="Usage"
-          stroke="#00000"
-          fillOpacity={1}
-          fill="url(#colorUv)"
-        />
-      </AreaChart>
+      <div className="graph">
+        <ResponsiveContainer width="90%" height={300}>
+          <AreaChart
+            data={componentData}
+            margin={{ top: 5, bottom: 5, left: 0, right: 25 }}
+          >
+            <defs>
+              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor={graphColor} stopOpacity={0.8} />
+                <stop offset="95%" stopColor={graphColor} stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <XAxis type="number" domain={[0, 24]} dataKey="hour" />
+            <YAxis type="number" domain={[0, 100]} dataKey="Usage" />
+            <CartesianGrid strokeDasharray="5 5" />
+            <Tooltip />
+            <Area
+              type="monotone"
+              dataKey="Usage"
+              stroke="#00000"
+              fillOpacity={1}
+              fill="url(#colorUv)"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };
@@ -64,3 +71,7 @@ export default VPSGraph;
       </ResponsiveContainer>
 
 */
+
+//       <h1 className="graph-text">{componentName}</h1>
+
+// <AreaChart width={800} height={300} data={componentData}>
